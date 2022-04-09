@@ -7,7 +7,6 @@
  *
  * Return: Always 0 (Success/correct)
  */
-
 int main(void)
 {
 int n;
@@ -15,20 +14,13 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-if (n == 0)
-{
-printf("%i is zero\n");
-}
-
+if (n > 1)
+printf("%d is positive\n", n);
 else if (n < 0)
-{printf("%i is negative\n", n);
-}
-
+printf("%d is negative\n", n);
 else
-{
-printf("%i is positive\n", n);
-}
+
+printf("%d is zero\n", n);
 
 return (0);
-
 }
