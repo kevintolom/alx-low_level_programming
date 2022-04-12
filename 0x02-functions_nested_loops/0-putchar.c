@@ -1,5 +1,4 @@
 #include <main.h>
-
 /**
  * main-main block
  * Description: Print _putchar in a new line
