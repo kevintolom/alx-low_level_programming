@@ -1,4 +1,4 @@
-#inlcude "main.h"
+#include "main.h"
 
 /**
  * times_table - Prints the 9 times table, starting with 0.
@@ -27,4 +27,4 @@ _putchar((prod % 10) + '0');
 }
 _putchar('\n');
 }
-}
+i}
