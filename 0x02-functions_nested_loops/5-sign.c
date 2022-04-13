@@ -2,7 +2,7 @@
 
 /**
  * print_sign - Print the sign of a number.
- * @c: The number on which the sign will be printed.
+ * @n: The number on which the sign will be printed.
  *
  * Return: 1 if the number is greater than zero,
  *         0 if the number is zero,
