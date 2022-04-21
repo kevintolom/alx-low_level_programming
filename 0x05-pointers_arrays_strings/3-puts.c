@@ -2,9 +2,10 @@
 
 /**
  * _puts - print a string
- * @dtr:pointer char
+ * @str:pointer char
  * return:void
  */
+
 void _puts(char *str)
 {
 int i;
