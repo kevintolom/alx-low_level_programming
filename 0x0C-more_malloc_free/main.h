@@ -1,16 +1,27 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#include "main.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-#define min(x, y) (((x) < (y)) ? (x) : (y))
+/**
+ * _calloc - allocates memory using malloc, and initializes it to zero
+ * @size: size of the memory block to be allocated
+ * @nmemb: number of elements
+ *
+ * Return: pointer to the address of the memory block
+ */
 
-int _putchar(char c);
-void *malloc_checked(unsigned int b);
-char *string_nconcat(char *s1, char *s2, unsigned int n);
-int len(char *str);
-void *_calloc(unsigned int nmemb, unsigned int size);
-int *array_range(int min, int max);
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+    char *block;
+    unsigned int i;
 
-#endif /*MAIN_H*/
+    if (nmemb == 0 || size == 0)
+        return (NULL);
+    block = malloc(nmemb * size);
+    if (block != NULL)
+    {
+        for (i = 0; i < (nmemb * size); i++)
+            block[i] = 0;
+        return (block);
+    }
+    else
+        return (NULL);
+}
